@@ -1,3 +1,4 @@
+/* the displayed font family appears to be called "congenial" and requires purchasing, so I am using the fallback font */
 #page {
     position: relative;
 }
@@ -27,4 +28,78 @@
 
 .carouselImage {
     width: 100vw;
+    max-height: 1000px;
+}
+
+.sidebar {
+    height: 32.9%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.squareHeader {
+    font-size: calc(100vw * (78 / 1600));
+}
+
+.imagesquare {
+    background-image: url("../rsc/fourmen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25vw;
+    height: 25vh;
+}
+
+.doubleImage1 {
+    background-image: url("../rsc/double-image-camping.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 35vh;
+}
+
+.doubleImage2 {
+    background-image: url("../rsc/double-image-video-button.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 35vh;
+}
+
+.circle-image {
+    background-image: url("../rsc/blue-circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25vh;
+    height: calc(100vw * (300 / 1600));
+}
+
+h2.sideHeader {
+    font-size: calc(100vw * (86 / 1600));
+    font-family: sans-serif;
+    opacity: 1;
+}
+
+section {
+    padding: calc(100vw * (90 / 1600));
+}
+
+section>h2 {
+    font-size: calc(100vw * (62 / 1600));
+    color: #f68846;
+    margin: 0;
+}
+
+section>p {
+    font-size: calc(100vw * (47 / 1600));
+    color: #76706E;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
 }
