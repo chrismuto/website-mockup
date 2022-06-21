@@ -21,9 +21,10 @@
 }
 
 #nav-wrapper {
-    background: transparent;
+    background-color: #f68846;
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
+    background: transparent;
 }
 
 #form {
@@ -60,6 +61,7 @@
 
 .sidebar {
     height: 32.9%;
+    width: calc(100vw * (514 / 1600));
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -107,6 +109,13 @@
 
 .footerlink {
     color: #f68846;
+}
+
+.hamburger {
+    padding-right: 20px;
+    height: 5vh;
+    width: 5vw;
+    border: none;
 }
 
 h2.sideHeader {

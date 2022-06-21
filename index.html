@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Apartment Living</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -18,24 +20,30 @@
                 </a>
             </div>
             
-            <div id="nav-wrapper" class="display-flex justify-content-center p-0 w-100">
-                <nav id="top-nav" class="navbar navbar-dark">
+            <div id="nav-wrapper" class="d-flex justify-content-between p-0 w-100">
+                <nav id="top-nav" class="navbar navbar-dark d-inline-flex justify-content-between w-100">
                     <a href="index.html">
                         <img src="rsc/companylogo-removebg-preview.png">
                     </a>
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                    <button class="hamburger navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
                     </button>
+                    <div class="collapse" id="navbarToggleExternalContent3">
+                        <div class="bg-light shadow-3 p-4">
+                            <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+                            <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+                            <button class="btn btn-link btn-block m-0">Link 3</button>
+                        </div>
+                    </div>
                 </nav>
-                <div id="navDropdown" class="navbar-collapse collapse">
-                    
-                </div>
             </div>
             
             <div id="carousel-wrapper" class="col-12 d-flex p-0">
                 <div class="flex-column">
                     <div>
-                        <div class="sidebar col-4 text-right">
+                        <div class="sidebar text-right">
                             <h2 id="sideHeader1" class="sideHeader d-flex align-items-center justify-content-end text-light p-5 h-100 w-100">Units <br> available!</h2>
                         </div>
                         <img class="carouselImage" src="rsc/commonarea.jpg">

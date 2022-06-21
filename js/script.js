@@ -60,8 +60,9 @@ gsap.from("#scrollHeader5", {
     paused: true,
     delay: 1})
 
-if (ScrollTrigger.isInViewport("#carousel-wrapper", 0)) {
+// get scroll to show navbar background only after carousel images are cleared, not working right now
+if (ScrollTrigger.isInViewport("#carousel-wrapper", false)) {
     gsap.from("#nav-wrapper", {
-    backgroundColor: f68846
+    background: transparent
 })
 }
