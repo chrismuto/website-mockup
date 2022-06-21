@@ -41,6 +41,18 @@
     font-weight: 900;
 }
 
+#contactbutton {
+    background-color: #f68846;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+#pagefooter {
+    background-color: #d2ccca;
+    padding-left: calc(100vw * (90 / 1600));
+    padding-right: calc(100vw * (90 / 1600));
+}
+
 .carouselImage {
     width: 100vw;
     max-height: 1000px;
@@ -93,6 +105,10 @@
     height: calc(100vw * (300 / 1600));
 }
 
+.footerlink {
+    color: #f68846;
+}
+
 h2.sideHeader {
     font-size: calc(100vw * (86 / 1600));
     font-family: sans-serif;
@@ -123,6 +139,17 @@ section>p {
     font-size: calc(100vw * (47 / 1600));
     color: #76706E;
     margin: 0;
+}
+
+section>div>p {
+    font-size: calc(100vw * (47 / 1600));
+    color: #76706E;
+    margin: 0;
+}
+
+footer>div>p {
+    font-size: calc(100vw * (21 / 1600));
+    color: #76706e;
 }
 
 a:hover {
