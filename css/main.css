@@ -54,6 +54,12 @@
     padding-right: calc(100vw * (90 / 1600));
 }
 
+#dropdown {
+    background-color: #f68846;
+    width: 100%;
+    height: 60vh;
+}
+
 .carouselImage {
     width: 100vw;
     height: 1000px;

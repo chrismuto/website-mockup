@@ -20,24 +20,27 @@
                 </a>
             </div>
             
-            <div id="nav-wrapper" class="d-flex justify-content-between p-0 w-100">
+            <div id="nav-wrapper" class="d-flex justify-content-between p-0 w-100 accordion">
                 <nav id="top-nav" class="navbar navbar-dark d-inline-flex justify-content-between w-100">
                     <a href="index.html">
                         <img src="rsc/companylogo-removebg-preview.png">
                     </a>
-                    <button class="hamburger navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <div class="collapse" id="navbarToggleExternalContent3">
-                        <div class="bg-light shadow-3 p-4">
-                            <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-                            <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-                            <button class="btn btn-link btn-block m-0">Link 3</button>
+                    <div class="dropdown">
+                        <button class="hamburger btn navbar-toggler ms-auto drop" type="button" data-toggle="dropdown"
+                            data-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </button>
+                        <div id="dropdown" class="dropdown-menu" id="navbarToggleExternalContent3" data-parent="#nav-wrapper">
+                            <div>
+                                <button class="btn btn-link btn-block border-bottom m-0 dropdown-item">Link 1</button>
+                                <button class="btn btn-link btn-block border-bottom m-0 dropdown-item">Link 2</button>
+                                <button class="btn btn-link btn-block m-0 dropdown-item">Link 3</button>
+                            </div>
                         </div>
                     </div>
                 </nav>
+                </div>
             </div>
             
             <div id="carousel-wrapper" class="col-12 d-flex p-0">
