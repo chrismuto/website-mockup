@@ -7,49 +7,48 @@
         <title>Apartment Living</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
         <div id="page" class="site">
-
+            
             <!-- div for orange circle -->
             <div id="circle-top">
                 <a href="#targetlink">
                     <img src="rsc/circle-top-removebg-preview.png"></img>
                 </a>
             </div>
-
-            <div id="nav-wrapper" class="display-flex justify-content-center p-0">
+            
+            <div id="nav-wrapper" class="display-flex justify-content-center p-0 w-100">
                 <nav id="top-nav" class="navbar navbar-dark">
                     <a href="index.html">
                         <img src="rsc/companylogo-removebg-preview.png">
                     </a>
                     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars"></i>
                     </button>
                 </nav>
                 <div id="navDropdown" class="navbar-collapse collapse">
-
+                    
                 </div>
             </div>
             
             <div id="carousel-wrapper" class="col-12 d-flex p-0">
                 <div class="flex-column">
                     <div>
-                        <div class="sidebar col-4 text-center">
-                            <h2 class="sideHeader d-flex align-items-center text-light h-100">Units available!</h2>
+                        <div class="sidebar col-4 text-right">
+                            <h2 id="sideHeader1" class="sideHeader d-flex align-items-center justify-content-end text-light p-5 h-100 w-100">Units <br> available!</h2>
                         </div>
                         <img class="carouselImage" src="rsc/commonarea.jpg">
                     </div>
                     <div>
-                        <div class="sidebar col-4 text-center">
-                            <h2 class="sideHeader d-flex align-items-center text-light h-100">Placeholder</h2>
+                        <div class="sidebar col-4 text-right">
+                            <h2 id="sideHeader2" class="sideHeader d-flex align-items-center justify-content-end text-light p-5 h-100 w-100">Placeholder</h2>
                         </div>
                         <img class="carouselImage" src="rsc/apartmentpool.jpg">
                     </div>
                     <div>
                         <div class="sidebar col-4 text-center">
-                            <h2 class="sideHeader d-flex align-items-center text-light h-100">Join us today</h2>
+                            <h2 id="sideHeader3" class="sideHeader d-flex align-items-center justify-content-end text-light p-5 h-100 w-100">Join <br> us <br> today</h2>
                         </div>
                         <img class="carouselImage" src="rsc/livingroom.webp">
                     </div>
@@ -60,12 +59,12 @@
             </div>
             
             <section>
-                <h2>Section 1</h2>
+                <h2 id="scrollHeader1" class="animate-up-fade-in">Section 1</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium malesuada massa, at semper leo imperdiet id. In et ullamcorper urna. Donec nec feugiat massa. Nunc blandit ultricies blandit.
                 </p>
             </section>
-
+            
             <section id="squares" class="col-12 p-0 d-inline-flex">
                 <div class="col-3 p-0 m-0 imagesquare d-flex justify-content-center align-items-center">
                     <h2 class="squareHeader text-light">Pic1</h2>
@@ -82,7 +81,7 @@
             </section>
             
             <section>
-                <h2>Section 2</h2>
+                <h2 id="scrollHeader2" class="animate-up-fade-in">Section 2</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium malesuada massa, at semper leo imperdiet id. In et ullamcorper urna. Donec nec feugiat massa. Nunc blandit ultricies blandit.
                 </p>
@@ -91,71 +90,71 @@
             <section id="doubleImage" class="col-12 p-0 d-inline-flex">
                 <a href="#deadlink" class="col-6">
                     <div class="p-0 m-0 doubleImage1 d-flex justify-content-center align-items-center">
-                        <h2 class="squareHeader text-light">Explore</h2>
+                        <h2 class="squareHeader text-light animate-up-fade-in">Explore</h2>
                     </div>
                 </a>
                 <div class="col-6 p-0 m-0 doubleImage2 d-flex justify-content-center align-items-center">
                     <h2 class="squareHeader text-light">video button</h2>
                 </div>
             </section>
-
+            
             <!-- social media buttons -->
             <section id="socialSection" class="col-12">
-                <h2>Social Media</h2>
+                <h2 id="scrollHeader3" class="animate-up-fade-in">Social Media</h2>
                 <p class="mb-2">A row of images goes here</p>
                 <div id="social-wrapper" class="d-inline-flex justify-content-center w-100">
                     <a href="#deadlink" class="col-3">
-                    <div class="p-0 m-0 circle-image">
-                    </div>
-                </a>
-                <a href="#deadlink" class="col-3">
-                    <div class="p-0 m-0 circle-image">
-                    </div>
-                </a>
-                <a href="#deadlink" class="col-3">
-                    <div class="p-0 m-0 circle-image">
-                    </div>
-                </a>
-                <a href="#deadlink" class="col-3">
-                    <div class="p-0 m-0 circle-image">
-                    </div>
-                </a>
-                <div>
-            </section>
-
-            <section id="form" class="col-12 text-light">
-                <div class="col-12">
-                    <h2 class="mt-3 mt-md-0">
-                        Mailing list form
-                    </h2>
-                    <p>A mailing list signup</p>
-                    <div id="form-wrapper" class="col-12 d-inline-flex p-0">
-                        <div id="nameInput" class="col-6 p-0">
-                            <input name="namefield" id="namefield" type="text" class="col-12">
-                            <p>
-                                *name
-                            </p>
+                        <div class="p-0 m-0 circle-image">
                         </div>
-                        <div id="emailInput" class="col-6">
-                            <input name="emailfield" id="emailfield" type="text" class="col-12">
-                            <p>
-                                *email
-                            </p>
+                    </a>
+                    <a href="#deadlink" class="col-3">
+                        <div class="p-0 m-0 circle-image">
                         </div>
-                    </div>
-                    <button id="formsubmitbutton" type="submit" class="btn text-light col-2 my-3">SUBMIT</button>
-                </div>
+                    </a>
+                    <a href="#deadlink" class="col-3">
+                        <div class="p-0 m-0 circle-image">
+                        </div>
+                    </a>
+                    <a href="#deadlink" class="col-3">
+                        <div class="p-0 m-0 circle-image">
+                        </div>
+                    </a>
+                    <div>
+                    </section>
+                    
+                    <section id="form" class="col-12 text-light">
+                        <div class="col-12">
+                            <h2 id="scrollHeader4" class="mt-3 mt-md-0 animate-up-fade-in">
+                                Mailing list form
+                            </h2>
+                            <p>A mailing list signup</p>
+                            <div id="form-wrapper" class="col-12 d-inline-flex p-0">
+                                <div id="nameInput" class="col-6 p-0">
+                                    <input name="namefield" id="namefield" type="text" class="col-12">
+                                    <p>
+                                        *name
+                                    </p>
+                                </div>
+                                <div id="emailInput" class="col-6">
+                                    <input name="emailfield" id="emailfield" type="text" class="col-12">
+                                    <p>
+                                        *email
+                                    </p>
+                                </div>
+                            </div>
+                            <button id="formsubmitbutton" type="submit" class="btn text-light col-2 my-3">SUBMIT</button>
+                        </div>
             </section>
-
+            
             <section id="contact" class="col-12 d-inline-flex">
                 <img src="rsc/map.jpg" class="col-6">
                 <div class="col-6 text-center">
-                    <h2>Visit</h2>
+                    <h2 id="scrollHeader5" class="animate-up-fade-in">Visit</h2>
                     <p>Tours available, please contact us to make an appointment</p>
                     <button id="contactbutton" type="submit" class="btn text-light col-2 my-5">EMAIL</button>
                 </div>
             </section>
-
+            
             <footer id="pagefooter" class="col-12 d-flex justify-content-between">
                 <img src="rsc/companylogo-removebg-preview.png">
                 <div class="d-flex justify-content-around align-items-center col-8">
@@ -177,5 +176,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        </body>
-</html>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    </html>

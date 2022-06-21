@@ -55,7 +55,7 @@
 
 .carouselImage {
     width: 100vw;
-    max-height: 1000px;
+    height: 1000px;
 }
 
 .sidebar {
@@ -112,7 +112,8 @@
 h2.sideHeader {
     font-size: calc(100vw * (86 / 1600));
     font-family: sans-serif;
-    opacity: 1;
+    position: absolute;
+    word-wrap: normal;
 }
 
 section {
