@@ -17,14 +17,14 @@
     padding: 10px;
     color: #ffffff;
     background-color: #f68846;
-    z-index: 9999;
+    z-index: 999;
 }
 
 #nav-wrapper {
     background-color: #f68846;
+    height: 105px;
     position: fixed;
     z-index: 1000;
-    background: transparent;
 }
 
 #form {
@@ -107,7 +107,7 @@
 .circle-image {
     background-image: url("../rsc/blue-circle.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     width: 25.5vh;
     height: calc(100vw * (300 / 1600));
