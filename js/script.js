@@ -67,6 +67,14 @@ gsap.from("#scrollHeader5", {
   delay: 1,
 });
 
+gsap.from("#dropdown", {
+    scrollTrigger: "#dropdown",
+    y: -400,
+    opacity: 0,
+    paused: true,
+    delay: 1,
+  });
+
 // get scroll to show navbar background only after carousel images are cleared, not working right now
 
 let carousel = document.querySelector("#carousel-wrapper");
@@ -81,3 +89,14 @@ ScrollTrigger.create({
     animation: fadeIn,
     toggleActions: "play complete reverse reverse"
 });
+
+let targets = gsap.utils.toArray(".hamburger");
+
+targets.forEach((obj) => {
+  obj.anim = gsap.to(document.querySelector("#dropdown"), { y: 0, opacity: 1 }).reversed(true);
+  obj.addEventListener("click", doCoolStuff);
+});
+
+function doCoolStuff() {
+  this.anim.reversed(!this.anim.reversed());
+}
