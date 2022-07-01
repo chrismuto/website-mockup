@@ -72,14 +72,12 @@ gsap.from("#scrollHeader5", {
 let carousel = document.querySelector("#carousel-wrapper");
 let navWrapper = document.querySelector("#nav-wrapper");
 
-ScrollTrigger.create({
-    onUpdate: headerBackground
-});
+const fadeIn = gsap.fromTo(navWrapper, {backgroundColor: "#f6884600"}, {duration: 0.5, backgroundColor: "#f68846ff"});
 
-function headerBackground() {
-  if (ScrollTrigger.isInViewport(carousel)) {
-    navWrapper.style.background = "transparent";
-  } else {
-    navWrapper.style.background = "";
-  }
-}
+ScrollTrigger.create({
+    trigger: carousel,
+    start: "bottom top",
+    end: "max",
+    animation: fadeIn,
+    toggleActions: "play complete reverse reverse"
+});
